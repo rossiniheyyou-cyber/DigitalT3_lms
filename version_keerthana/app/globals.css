@@ -1,0 +1,68 @@
+@import "../node_modules/tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #0f2f2f;
+  --teal-primary: #0fa8a8;
+  --teal-dark: #0c8888;
+  --teal-light: #1abc9c;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-teal-primary: var(--teal-primary);
+  --color-teal-dark: var(--teal-dark);
+  --color-teal-light: var(--teal-light);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+/* =================================
+   DigitalT3 – White + Teal Theme
+   Tailwind v4 SAFE OVERRIDES
+================================= */
+
+@layer utilities {
+  /* BACKGROUNDS */
+  .bg-blue-500,
+  .bg-blue-600,
+  .bg-blue-700 {
+    background-color: #008080 !important;
+  }
+
+  .hover\:bg-blue-600:hover,
+  .hover\:bg-blue-700:hover {
+    background-color: #006666 !important;
+  }
+
+  /* TEXT COLORS */
+  .text-blue-500,
+  .text-blue-600 {
+    color: #008080 !important;
+  }
+
+  .text-slate-700,
+  .text-slate-800 {
+    color: #0f172a !important;
+  }
+
+  /* BORDERS */
+  .border-blue-500,
+  .border-blue-600,
+  .border-slate-200,
+  .border-slate-300 {
+    border-color: rgba(0, 128, 128, 0.3) !important;
+  }
+}
+
+/* Shared components already used in app */
+.card {
+  @apply bg-white border rounded-xl p-6;
+  border-color: rgba(0, 128, 128, 0.25);
+}
+
+.section-title {
+  color: #008080;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
