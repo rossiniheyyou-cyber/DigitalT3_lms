@@ -10,9 +10,7 @@ export default function ContinueLearning() {
   if (!recent) {
     return (
       <div className="space-y-4">
-        <h2 className="text-xl font-semibold text-slate-900">
-          Continue Learning
-        </h2>
+        
         <div className="bg-white rounded-2xl border border-slate-200 p-8 text-center">
           <p className="text-slate-600 mb-4">
             Start a learning path to see your progress here.

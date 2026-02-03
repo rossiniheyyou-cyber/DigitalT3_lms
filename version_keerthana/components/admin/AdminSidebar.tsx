@@ -27,7 +27,7 @@ export default function AdminSidebar() {
   const pathname = usePathname();
 
   return (
-    <aside className="w-64 bg-slate-800 border-r border-slate-700 p-4 hidden md:block shrink-0">
+    <aside className="w-64 bg-teal-900 p-4 fixed top-16 left-0 h-[calc(100vh-4rem)]">
       <h2 className="text-xl font-semibold mb-6 text-white flex items-center gap-2">
         <Shield className="w-6 h-6" />
         Admin

@@ -22,7 +22,7 @@ export default function ManagerSidebar() {
   const pathname = usePathname();
 
   return (
-    <aside className="w-64 bg-blue-900 border-r border-blue-800 p-4 hidden md:block shrink-0">
+    <aside className="w-64 bg-teal-900 p-4 fixed top-16 left-0 h-[calc(100vh-4rem)]">
       <h2 className="text-xl font-semibold mb-6 text-white flex items-center gap-2">
         Manager
       </h2>

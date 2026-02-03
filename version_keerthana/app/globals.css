@@ -1,4 +1,7 @@
-@import "../node_modules/tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 
 :root {
   --background: #ffffff;

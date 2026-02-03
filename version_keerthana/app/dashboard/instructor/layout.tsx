@@ -8,7 +8,7 @@ export default function InstructorLayout({
   return (
     <div className="flex min-h-screen">
       <InstructorSidebar />
-      <main className="flex-1 min-w-0 p-8 bg-slate-50">{children}</main>
+      <main className="flex-1 ml-64 min-w-0 p-8 bg-slate-50">{children}</main>
     </div>
   );
 }

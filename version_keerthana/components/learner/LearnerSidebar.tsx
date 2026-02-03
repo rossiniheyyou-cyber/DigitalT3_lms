@@ -15,7 +15,7 @@ export default function LearnerSidebar() {
   const pathname = usePathname();
 
   return (
-    <aside className="w-64 bg-teal-900 border-r border-teal-800 p-4 hidden md:block">
+    <aside className="w-64 bg-teal-900 p-4 fixed top-16 left-0 h-[calc(100vh-4rem)]">
       <h2 className="text-xl font-semibold mb-6 text-white">Learner</h2>
 
       <nav className="space-y-2">
